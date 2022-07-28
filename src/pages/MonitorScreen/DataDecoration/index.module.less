@@ -1,0 +1,37 @@
+.cus-decoration {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  &:not(:first-child) {
+    margin-left: 20px;
+  }
+  
+  .decoration-content {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title-bg {
+    position: absolute;
+    width: 80px;
+    object-fit: contain;
+  }
+
+  .normal-title-bg {
+    top: 0;
+    right: 10px;
+  }
+
+  .reverse-title-bg {
+    bottom: 0;
+    left: 10px;
+    transform: rotate(180deg);
+  }
+}

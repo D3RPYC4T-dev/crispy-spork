@@ -1,0 +1,141 @@
+level=info ts=2022-07-24T03:56:30.862Z caller=node_exporter.go:181 msg="Starting node_exporter" version="(version=1.1.2, branch=master, revision=8edd27baaf0cd4e443ab556329fa0f8c3b2b02a0)"
+level=info ts=2022-07-24T03:56:30.863Z caller=node_exporter.go:182 msg="Build context" build_context="(go=go1.16, user=root@192-168-8-176, date=20210622-02:28:10)"
+level=info ts=2022-07-24T03:56:30.863Z caller=filesystem_common.go:110 collector=filesystem msg="Parsed flag --collector.filesystem.mount-points-exclude" flag=^/(dev|proc|sys|var/lib/docker/.+)($|/)
+level=info ts=2022-07-24T03:56:30.863Z caller=filesystem_common.go:112 collector=filesystem msg="Parsed flag --collector.filesystem.fs-types-exclude" flag=^(autofs|binfmt_misc|bpf|cgroup2?|configfs|debugfs|devpts|devtmpfs|fusectl|hugetlbfs|iso9660|mqueue|nsfs|overlay|proc|procfs|pstore|rpc_pipefs|securityfs|selinuxfs|squashfs|sysfs|tracefs)$
+level=info ts=2022-07-24T03:56:30.863Z caller=node_exporter.go:107 msg="Enabled collectors"
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=arp
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=bcache
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=bonding
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=btrfs
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=conntrack
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=cpu
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=cpufreq
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=diskstats
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=edac
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=entropy
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=fibrechannel
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=filefd
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=filesystem
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=hwmon
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=infiniband
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=ipvs
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=loadavg
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=mdadm
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=meminfo
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=netclass
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=netdev
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=netstat
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=nfs
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=nfsd
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=powersupplyclass
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=pressure
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=rapl
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=schedstat
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=sockstat
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=softnet
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=stat
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=textfile
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=thermal_zone
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=time
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=timex
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=udp_queues
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=uname
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=vmstat
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=xfs
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:114 collector=zfs
+level=info ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:198 msg="Listening on" address=:9100
+level=error ts=2022-07-24T03:56:30.864Z caller=node_exporter.go:201 err="listen tcp :9100: bind: address already in use"
+level=info ts=2022-07-24T03:57:44.072Z caller=node_exporter.go:181 msg="Starting node_exporter" version="(version=1.1.2, branch=master, revision=8edd27baaf0cd4e443ab556329fa0f8c3b2b02a0)"
+level=info ts=2022-07-24T03:57:44.073Z caller=node_exporter.go:182 msg="Build context" build_context="(go=go1.16, user=root@192-168-8-176, date=20210622-02:28:10)"
+level=info ts=2022-07-24T03:57:44.073Z caller=filesystem_common.go:110 collector=filesystem msg="Parsed flag --collector.filesystem.mount-points-exclude" flag=^/(dev|proc|sys|var/lib/docker/.+)($|/)
+level=info ts=2022-07-24T03:57:44.073Z caller=filesystem_common.go:112 collector=filesystem msg="Parsed flag --collector.filesystem.fs-types-exclude" flag=^(autofs|binfmt_misc|bpf|cgroup2?|configfs|debugfs|devpts|devtmpfs|fusectl|hugetlbfs|iso9660|mqueue|nsfs|overlay|proc|procfs|pstore|rpc_pipefs|securityfs|selinuxfs|squashfs|sysfs|tracefs)$
+level=info ts=2022-07-24T03:57:44.073Z caller=node_exporter.go:107 msg="Enabled collectors"
+level=info ts=2022-07-24T03:57:44.073Z caller=node_exporter.go:114 collector=arp
+level=info ts=2022-07-24T03:57:44.073Z caller=node_exporter.go:114 collector=bcache
+level=info ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:114 collector=bonding
+level=info ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:114 collector=btrfs
+level=info ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:114 collector=conntrack
+level=info ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:114 collector=cpu
+level=info ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:114 collector=cpufreq
+level=info ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:114 collector=diskstats
+level=info ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:114 collector=edac
+level=info ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:114 collector=entropy
+level=info ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:114 collector=fibrechannel
+level=info ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:114 collector=filefd
+level=info ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:114 collector=filesystem
+level=info ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:114 collector=hwmon
+level=info ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:114 collector=infiniband
+level=info ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:114 collector=ipvs
+level=info ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:114 collector=loadavg
+level=info ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:114 collector=mdadm
+level=info ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:114 collector=meminfo
+level=info ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:114 collector=netclass
+level=info ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:114 collector=netdev
+level=info ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:114 collector=netstat
+level=info ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:114 collector=nfs
+level=info ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:114 collector=nfsd
+level=info ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:114 collector=powersupplyclass
+level=info ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:114 collector=pressure
+level=info ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:114 collector=rapl
+level=info ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:114 collector=schedstat
+level=info ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:114 collector=sockstat
+level=info ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:114 collector=softnet
+level=info ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:114 collector=stat
+level=info ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:114 collector=textfile
+level=info ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:114 collector=thermal_zone
+level=info ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:114 collector=time
+level=info ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:114 collector=timex
+level=info ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:114 collector=udp_queues
+level=info ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:114 collector=uname
+level=info ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:114 collector=vmstat
+level=info ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:114 collector=xfs
+level=info ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:114 collector=zfs
+level=info ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:198 msg="Listening on" address=:9100
+level=error ts=2022-07-24T03:57:44.074Z caller=node_exporter.go:201 err="listen tcp :9100: bind: address already in use"
+level=info ts=2022-07-26T04:32:02.883Z caller=node_exporter.go:181 msg="Starting node_exporter" version="(version=1.1.2, branch=master, revision=8edd27baaf0cd4e443ab556329fa0f8c3b2b02a0)"
+level=info ts=2022-07-26T04:32:02.884Z caller=node_exporter.go:182 msg="Build context" build_context="(go=go1.16, user=root@192-168-8-176, date=20210622-02:28:10)"
+level=info ts=2022-07-26T04:32:02.885Z caller=filesystem_common.go:110 collector=filesystem msg="Parsed flag --collector.filesystem.mount-points-exclude" flag=^/(dev|proc|sys|var/lib/docker/.+)($|/)
+level=info ts=2022-07-26T04:32:02.885Z caller=filesystem_common.go:112 collector=filesystem msg="Parsed flag --collector.filesystem.fs-types-exclude" flag=^(autofs|binfmt_misc|bpf|cgroup2?|configfs|debugfs|devpts|devtmpfs|fusectl|hugetlbfs|iso9660|mqueue|nsfs|overlay|proc|procfs|pstore|rpc_pipefs|securityfs|selinuxfs|squashfs|sysfs|tracefs)$
+level=info ts=2022-07-26T04:32:02.885Z caller=node_exporter.go:107 msg="Enabled collectors"
+level=info ts=2022-07-26T04:32:02.885Z caller=node_exporter.go:114 collector=arp
+level=info ts=2022-07-26T04:32:02.885Z caller=node_exporter.go:114 collector=bcache
+level=info ts=2022-07-26T04:32:02.885Z caller=node_exporter.go:114 collector=bonding
+level=info ts=2022-07-26T04:32:02.885Z caller=node_exporter.go:114 collector=btrfs
+level=info ts=2022-07-26T04:32:02.885Z caller=node_exporter.go:114 collector=conntrack
+level=info ts=2022-07-26T04:32:02.885Z caller=node_exporter.go:114 collector=cpu
+level=info ts=2022-07-26T04:32:02.885Z caller=node_exporter.go:114 collector=cpufreq
+level=info ts=2022-07-26T04:32:02.885Z caller=node_exporter.go:114 collector=diskstats
+level=info ts=2022-07-26T04:32:02.885Z caller=node_exporter.go:114 collector=edac
+level=info ts=2022-07-26T04:32:02.885Z caller=node_exporter.go:114 collector=entropy
+level=info ts=2022-07-26T04:32:02.885Z caller=node_exporter.go:114 collector=fibrechannel
+level=info ts=2022-07-26T04:32:02.885Z caller=node_exporter.go:114 collector=filefd
+level=info ts=2022-07-26T04:32:02.885Z caller=node_exporter.go:114 collector=filesystem
+level=info ts=2022-07-26T04:32:02.885Z caller=node_exporter.go:114 collector=hwmon
+level=info ts=2022-07-26T04:32:02.885Z caller=node_exporter.go:114 collector=infiniband
+level=info ts=2022-07-26T04:32:02.885Z caller=node_exporter.go:114 collector=ipvs
+level=info ts=2022-07-26T04:32:02.885Z caller=node_exporter.go:114 collector=loadavg
+level=info ts=2022-07-26T04:32:02.885Z caller=node_exporter.go:114 collector=mdadm
+level=info ts=2022-07-26T04:32:02.885Z caller=node_exporter.go:114 collector=meminfo
+level=info ts=2022-07-26T04:32:02.885Z caller=node_exporter.go:114 collector=netclass
+level=info ts=2022-07-26T04:32:02.885Z caller=node_exporter.go:114 collector=netdev
+level=info ts=2022-07-26T04:32:02.885Z caller=node_exporter.go:114 collector=netstat
+level=info ts=2022-07-26T04:32:02.885Z caller=node_exporter.go:114 collector=nfs
+level=info ts=2022-07-26T04:32:02.885Z caller=node_exporter.go:114 collector=nfsd
+level=info ts=2022-07-26T04:32:02.886Z caller=node_exporter.go:114 collector=powersupplyclass
+level=info ts=2022-07-26T04:32:02.886Z caller=node_exporter.go:114 collector=pressure
+level=info ts=2022-07-26T04:32:02.886Z caller=node_exporter.go:114 collector=rapl
+level=info ts=2022-07-26T04:32:02.886Z caller=node_exporter.go:114 collector=schedstat
+level=info ts=2022-07-26T04:32:02.886Z caller=node_exporter.go:114 collector=sockstat
+level=info ts=2022-07-26T04:32:02.886Z caller=node_exporter.go:114 collector=softnet
+level=info ts=2022-07-26T04:32:02.886Z caller=node_exporter.go:114 collector=stat
+level=info ts=2022-07-26T04:32:02.886Z caller=node_exporter.go:114 collector=textfile
+level=info ts=2022-07-26T04:32:02.886Z caller=node_exporter.go:114 collector=thermal_zone
+level=info ts=2022-07-26T04:32:02.886Z caller=node_exporter.go:114 collector=time
+level=info ts=2022-07-26T04:32:02.886Z caller=node_exporter.go:114 collector=timex
+level=info ts=2022-07-26T04:32:02.886Z caller=node_exporter.go:114 collector=udp_queues
+level=info ts=2022-07-26T04:32:02.886Z caller=node_exporter.go:114 collector=uname
+level=info ts=2022-07-26T04:32:02.886Z caller=node_exporter.go:114 collector=vmstat
+level=info ts=2022-07-26T04:32:02.886Z caller=node_exporter.go:114 collector=xfs
+level=info ts=2022-07-26T04:32:02.886Z caller=node_exporter.go:114 collector=zfs
+level=info ts=2022-07-26T04:32:02.886Z caller=node_exporter.go:198 msg="Listening on" address=:9100
+level=error ts=2022-07-26T04:32:02.886Z caller=node_exporter.go:201 err="listen tcp :9100: bind: address already in use"

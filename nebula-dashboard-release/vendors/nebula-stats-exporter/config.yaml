@@ -1,0 +1,15 @@
+clusters:
+- name: "default"
+  instances:
+  - name: metad0 
+    endpointIP: localhost
+    endpointPort: 19559
+    componentType: metad
+  - name: graphd0
+    endpointIP: localhost
+    endpointPort: 19669
+    componentType: graphd
+  - name: storaged0
+    endpointIP: localhost
+    endpointPort: 19779
+    componentType: storaged
