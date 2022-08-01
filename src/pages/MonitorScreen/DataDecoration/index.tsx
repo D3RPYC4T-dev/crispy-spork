@@ -4,8 +4,8 @@ import { deepMerge } from '@jiaminghi/charts/lib/util/index';
 import { deepClone } from '@jiaminghi/c-render/lib/plugin/util';
 import { useAutoResize } from '@jiaminghi/data-view-react';
 
-import { uuid } from '@base/utils';
-import bgImg from '@base/static/images/screen_tittle_bg.png';
+import { uuid } from '@/utils';
+import bgImg from '@/static/images/screen_tittle_bg.png';
 
 import styles from './index.module.less';
 

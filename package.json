@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@antv/g2": "^4.1.29",
+    "@jiaminghi/data-view": "^2.10.0",
     "@rematch/core": "^1.4.0",
     "@rematch/loading": "^1.2.1",
     "antd": "4.17.3",

@@ -11,11 +11,11 @@ import { useAutoResize } from '@jiaminghi/data-view-react';
 import intl from 'react-intl-universal';
 import { Carousel } from 'antd';
 
-import NormalNodeImg from '@base/static/images/screen_service_icon_normal.svg';
-import ErrorNodeImg from '@base/static/images/screen_service_icon_error.svg';
-import { ICluster, IMachine, IServiced } from '@base/utils/interface';
-import { PROCESS_STATUS } from '@base/utils/process';
-import { IS_SMALL_SCREEN } from '@base/utils';
+import NormalNodeImg from '@/static/images/screen_service_icon_normal.svg';
+import ErrorNodeImg from '@/static/images/screen_service_icon_error.svg';
+import { ICluster, IMachine, IServiced } from '@/utils/interface';
+import { PROCESS_STATUS } from '@/utils/process';
+import { IS_SMALL_SCREEN } from '@/utils';
 import { debounce } from 'lodash';
 import DataDecration from '../DataDecoration';
 import styles from './index.module.less';

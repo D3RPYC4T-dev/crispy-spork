@@ -8,10 +8,10 @@ import React, {
 } from 'react';
 import _ from 'loadsh';
 
-import { getDataByType } from '@base/utils/dashboard';
+import { getDataByType } from '@/utils/dashboard';
 import { IRootState, IDispatch } from '@ent/store';
-import { BIG_SCREEN_SCREEN_METRICS } from '@base/utils/promQL';
-import { BIGSCREE_DEFAULT_RANGE } from '@base/utils/service';
+import { BIG_SCREEN_SCREEN_METRICS } from '@/utils/promQL';
+import { BIGSCREE_DEFAULT_RANGE } from '@/utils/service';
 import { connect } from 'react-redux';
 import AreaChart from '../AreaChart';
 

@@ -1,6 +1,5 @@
-import React from 'react';
-import _ from 'lodash';
-import { Chart, Geometry } from '@antv/g2';
+import React, { useEffect, useRef } from 'react';
+import { Chart } from '@antv/g2';
 import { Spin } from 'antd';
 import LineChart from '@/components/Charts/LineChart';
 import { ILineChartMetric, IStatSingleItem } from '@/utils/interface';
@@ -16,60 +15,53 @@ interface IProps {
   baseLine?: number;
 }
 
-class LineCard extends React.Component<IProps> {
-  chartInstance: Chart;
+function LineCard(props: IProps) {
+  const { loading, data, valueType, baseLine } = props;
+  const { maxNum, maxNumLen } = getMaxNumAndLength({
+    data,
+    valueType,
+    baseLine,
+  });
 
-  areaGeometry: Geometry;
+  const chartInstanceRef = useRef<Chart>();
 
-  lineGeometry: Geometry;
-
-  componentDidUpdate() {
+  useEffect(() => {
     /*
-     * HACK: it now will conflict with the same request loading in detail component
-     * issue: https://github.com/vesoft-inc-private/nebula-dashboard/issues/34
-     * */
-    const { loading } = this.props;
+    * HACK: it now will conflict with the same request loading in detail component
+    * issue: https://github.com/vesoft-inc-private/nebula-dashboard/issues/34
+    **/
     if (!loading) {
-      this.updateChart();
+      updateChart();
     }
-  }
+  }, [loading])
 
-  renderLineChart = (chartInstance: Chart) => {
-    const { valueType, sizes } = this.props;
-    this.chartInstance = chartInstance;
-    configDetailChart(this.chartInstance, {
+  const renderLineChart = (chartInstance: Chart) => {
+    const { valueType, sizes } = props;
+    chartInstanceRef.current = chartInstance;
+    configDetailChart(chartInstanceRef.current, {
       valueType,
       sizes,
       isCard: true,
     });
-    this.updateChart();
+    updateChart();
   };
 
-  updateChart = () => {
-    const { data = [] } = this.props;
-    this.chartInstance.changeData(data);
+  const updateChart = () => {
+    const { data = [] } = props;
+    chartInstanceRef.current?.changeData(data);
   };
 
-  render() {
-    const { loading, data, valueType, baseLine } = this.props;
-    const { maxNum, maxNumLen } = getMaxNumAndLength({
-      data,
-      valueType,
-      baseLine,
-    });
-    if (loading) {
-      return <Spin />;
-    }
-    return (
-      <LineChart
+  return (
+    loading
+      ? <Spin />
+      : <LineChart
         isDefaultScale={valueType === VALUE_TYPE.percentage} // VALUE_TYPE.percentage has a default Scale
         baseLine={baseLine}
         yAxisMaximum={maxNum}
-        renderChart={this.renderLineChart}
+        renderChart={renderLineChart}
         options={{ padding: [20, 20, 60, 6 * maxNumLen + 30] }}
       />
-    );
-  }
+  );
 }
 
 export default LineCard;

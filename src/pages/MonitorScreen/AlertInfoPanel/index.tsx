@@ -5,10 +5,10 @@ import classnames from 'classnames';
 import { deepMerge } from '@jiaminghi/charts/lib/util/index';
 import { deepClone } from '@jiaminghi/c-render/lib/plugin/util';
 
-import { co } from '@base/utils';
-import emptyImg from '@base/static/images/screen_alert_tips_bg.png';
+import { co } from '@/utils';
+import emptyImg from '@/static/images/screen_alert_tips_bg.png';
 
-import Icon from '@base/components/Icon';
+import Icon from '@/components/Icon';
 import styles from './index.module.less';
 
 const defaultConfig = {

@@ -9,7 +9,7 @@ import { deepClone } from '@jiaminghi/c-render/lib/plugin/util';
 
 import { useAutoResize } from '@jiaminghi/data-view-react';
 
-import { uuid } from '@base/utils';
+import { uuid } from '@/utils';
 
 import './index.less';
 

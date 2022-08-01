@@ -12,12 +12,12 @@ import { connect } from 'react-redux';
 import { debounce } from 'lodash';
 
 import { IDispatch, IRootState } from '@ent/store';
-import Icon from '@base/components/Icon';
-import { PROCESS_STATUS } from '@base/utils/process';
-import { AlertSeverity, GlobalAlertItem } from '@base/utils/interface';
-import { compareVersion, getVersion } from '@base/utils/dashboard';
-import decorationWebp from '@base/static/images/decoration.webp';
-import { IS_SMALL_SCREEN } from '@base/utils';
+import Icon from '@/components/Icon';
+import { PROCESS_STATUS } from '@/utils/process';
+import { AlertSeverity, GlobalAlertItem } from '@/utils/interface';
+import { compareVersion, getVersion } from '@/utils/dashboard';
+import decorationWebp from '@/static/images/decoration.webp';
+import { IS_SMALL_SCREEN } from '@/utils';
 import ScreenChart from './ScreenChart';
 import DataDecration from './DataDecoration';
 import BorderBox11 from './BorderBox11';
